@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Luxurious+Roman&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100&family=Shantell+Sans:wght@300;400;500;600;700;800&family=Tilt+Neon&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ################## html element styling ############## */
+
+
+body {
+    font-family: 'Tilt Neon';
+    line-height: 1.7;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ##################### header style $$################## */
+
+
+.header {
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* ###################### utility classes ############### */
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.md-heading {
+    font-size: 2rem;
+}
+
+.text-orange {
+    color: orangered;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-grey {
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.4em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary {
+    background: rgba(0, 0, 0, 0.719);
+    color: orangered;
+    border-radius: 100px;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 0.1em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-secondary {
+    background: rgba(0, 0, 0, 0.664);
+    color: orangered;
+    border-radius: 100px;
+    border: 2px solid orangered;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 68, 0, 0.116);
+}
+
+.btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+
+
+/* ##################### header styling ####################### */
+.navbar {
+
+    padding: 0.7rem;
+    background-color: rgba(85, 85, 85, 0.192);
+
+
+}
+
+.header .logo,
+.header .navbar a {
+    color: white;
+
+}
+
+.header .navbar .logo {
+    filter: invert();
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.header .navbar .nav-items {
+    float: right;
+    margin-top: 0.5rem;
+}
+
+.header .navbar .nav-item {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navbar:link,
+.navbar:visited {
+    color: #f4f4f4;
+}
+
+.navbar a {
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid white;
+}
+
+
+
+
+/* $###############  header content ##################### */
+
+
+.header-content {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    background: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.03));
+    text-align: center;
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+
+
+/* ########################### show case styling ######################## */
+
+.showcase {
+    background: #1f2024d7;
+    padding: 8rem 0;
+    color: white;
+
+}
+
+.row {
+    height: 334px;
+    background: rgba(0, 0, 0, 0.664);
+    box-shadow: 0px 0px 10px 0px rgba(138, 135, 135, 0.63);
+
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row2 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .text-box {
+
+    padding: 3rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ########################## feature styling ############## */
+.box-wrapper{
+    display: flex;
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+}
+.box{
+    color: #f4f4f4;
+    padding: 2rem;
+}
+.box h2{
+    color: orangered;
+    font-weight: 600;
+    
+}
+.box1 , .box3{
+    background-color: #333;
+}
+.box2{
+    background-color: orangered;
+}
+.box2 h2{
+    color: #333;
+}
+
